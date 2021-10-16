@@ -1,24 +1,12 @@
-import React, {useState, useEffect} from 'react'
-import {getGreeting} from '../apiClient'
+import React from 'react'
+
 
 const App = () => {
 
-  const [greeting, setGreeting] = useState('')
-  const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    getGreeting()
-      .then((greeting) => {
-        console.log(greeting)
-        setGreeting(greeting)
-      })
-  }, [count])
-
   return (
     <>
-    {count}
-    <h1>{greeting}</h1>
-    <button onClick={() => setCount(count + 1)}>Click</button>
+    <h1><a href='tel:+64210637576'>Phone number test +64</a></h1>
+    <h1><a href='tel:0210637576'>Phone number test just 021</a></h1>
     </>
   )
 }

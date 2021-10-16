@@ -1,10 +1,10 @@
 import React from 'react'
-const phoneNumber = '0210637576'
+const phoneNumber = '0275757023'
 
 const App = () => {
   return (
     <>
-      <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+      <h1><a href={`tel:${phoneNumber}`}>{phoneNumber}</a></h1>
     </>
   )
 }
